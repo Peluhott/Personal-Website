@@ -79,7 +79,7 @@ function renderHomePage(mainContainer) {
 
     // Resume
     const resumeLink = document.createElement('a');
-    resumeLink.href = 'resume/90125resume.pdf';
+    resumeLink.href = 'resume/090825resume.pdf'; 
     resumeLink.download = 'SedanoDev-Resume.pdf'; 
     const resumeLogo = document.createElement('img');
     resumeLogo.className = 'socialLinks';
