@@ -36,7 +36,7 @@ function renderHomePage(mainContainer) {
 
     const aPhoto = document.createElement('img');
     aPhoto.className = 'home-photo';
-    aPhoto.src = 'images/personalLogo2.jpg';
+    aPhoto.src = 'images/personallogo22.png';
     aPhoto.alt = 'descriptionOfLogo';
     aboutPhoto.appendChild(aPhoto);
 
@@ -102,7 +102,7 @@ function renderAboutMe(mainContainer) {
     leftContent.className = 'left-content';
     const leftPicture = document.createElement('img');
     leftPicture.className = 'left-picture';
-    leftPicture.src = 'images/greetpic.png';
+    leftPicture.src = 'images/greetpic2.png';
     leftPicture.alt = 'profile picture';
     const leftIntro = document.createElement('p');
     leftIntro.textContent = "Hey, I'm Javier!";
