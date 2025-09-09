@@ -28,7 +28,7 @@ function renderHomePage(mainContainer) {
     titleText.appendChild(titleElement);
     const subTitle = document.createElement('p');
     subTitle.className = 'home-subheader';
-    subTitle.textContent = "I'm a computer science student who enjoys building impactful software";
+    subTitle.textContent = "I'm a computer science student who enjoys building impactful software.";
     titleText.appendChild(subTitle);
 
     const aboutPhoto = document.createElement('div');
