@@ -12,217 +12,241 @@ const projects = [
         description: 'Memoire helps users overcome low moods by detecting sadness through wearable data (HRV, sleep quality) or self-reports and delivering uplifting, personalized content. Built with Node.js, TypeScript, PostgreSQL, Swift/React Native, and Cloudinary, it integrates with Apple Watch and Oura Ring, supports secure social logins, and allows users to upload, like, save, and share encouraging memories. To ensure effectiveness, the app itself decides when to deliver positive reminders.',
         projectIcon: 'images/memoire.png', 
         githubIcon: 'images/githublogo.svg',
-        githubLink: '' // No link, work in progress
+        githubLink: ''
     }
 ];
+
+const courses = [
+  {
+    title: "Software Engineering",
+    shortDescription: "Principles of design, testing, version control, and project management.",
+    internshipBenefits: "Prepares for teamwork, agile development, and producing scalable software.",
+    image: "images/SoftwareEngineering.png"
+  },
+  {
+    title: "Java Programming",
+    shortDescription: "Covers object-oriented programming, data structures, and application design in Java.",
+    internshipBenefits: "Write clean, maintainable code, debug effectively, and work with common frameworks.",
+    image: "images/java.svg"
+  },
+  {
+    title: "Calculus I & II",
+    shortDescription: "Focus on limits, derivatives, integrals, series, and multivariable basics.",
+    internshipBenefits: "Sharpens problem-solving and analytical thinking for algorithms and modeling.",
+    image: "images/Calc.png"
+  },
+  {
+    title: "Statistics",
+    shortDescription: "Covers probability, distributions, hypothesis testing, and regression.",
+    internshipBenefits: "Helps interpret data, validate results, and support data-driven decisions.",
+    image: "images/statistics.png"
+  },
+  {
+    title: "Discrete Mathematics",
+    shortDescription: "Topics include logic, sets, relations, graphs, and combinatorics.",
+    internshipBenefits: "Develops reasoning for algorithms, complexity analysis, and data structures.",
+    image: "images/discrete.png"
+  },
+  {
+    title: "Data Structures",
+    shortDescription: "Study of arrays, linked lists, stacks, queues, trees, and graphs.",
+    internshipBenefits: "Improves ability to optimize performance and solve coding interview problems.",
+    image: "images/DataStructures.png"
+  },
+  {
+    title: "Computer Organization & Assembly",
+    shortDescription: "Covers hardware architecture, memory, and low-level programming.",
+    internshipBenefits: "Gives insight into performance optimization and how code runs on hardware.",
+    image: "images/ComputerOrg.png"
+  },
+  {
+    title: "Principles of Databases",
+    shortDescription: "Design and query relational databases using SQL and normalization.",
+    internshipBenefits: "Enables building and maintaining databases, crucial for backend systems.",
+    image: "images/Database.png"
+  },
+  {
+    title: "Systems Programming",
+    shortDescription: "Covers C programming, memory management, and OS-level concepts.",
+    internshipBenefits: "Helps with debugging, performance tuning, and understanding operating systems.",
+    image: "images/systems.png"
+  },
+  {
+    title: "Concepts of Programming Languages",
+    shortDescription: "Explores syntax, semantics, paradigms, and type systems.",
+    internshipBenefits: "Improves adaptability to new languages and writing efficient code.",
+    image: "images/programminglanguages.png"
+  },
+  {
+    title: "Ethics in Computer Science",
+    shortDescription: "Examines social, legal, and ethical issues in technology.",
+    internshipBenefits: "Develops professionalism, responsibility, and awareness of ethical practices.",
+    image: "images/Ethics.png"
+  }
+];
+
+
+
 function renderHomePage(mainContainer) {
     mainContainer.innerHTML = '';
+    // Main container for combined Home/About
     const contentContainer = document.createElement('div');
-    contentContainer.className = 'home-page';
+    contentContainer.className = 'aboutme';
 
-    const titleText = document.createElement('div');
-    titleText.className = 'home-title';
-    const titleElement = document.createElement('p');
-    titleElement.className = 'home-header';
-    titleElement.textContent = 'SedanoDev - Software Engineer';
-    titleText.appendChild(titleElement);
-    const subTitle = document.createElement('p');
-    subTitle.className = 'home-subheader';
-    subTitle.textContent = "I'm a computer science student who enjoys building impactful software.";
-    titleText.appendChild(subTitle);
-
-    const aboutPhoto = document.createElement('div');
-    aboutPhoto.className = 'home-photo';
-
-    const aPhoto = document.createElement('img');
-    aPhoto.className = 'home-photo';
-    aPhoto.src = 'images/personallogo22.png';
-    aPhoto.alt = 'descriptionOfLogo';
-    aboutPhoto.appendChild(aPhoto);
-
-    const socialLinks = document.createElement('div');
-    //Linkedin, github, Email, Resume
-    socialLinks.className = 'home-links';
-
-    // LinkedIn
-    const linkedInLink = document.createElement('a');
-    linkedInLink.href = 'https://www.linkedin.com/in/javier-sedano/';
-    linkedInLink.target = '_blank';
-    const linkedInLogo = document.createElement('img');
-    linkedInLogo.className = 'socialLinks';
-    linkedInLogo.src = 'images/linkedinlogo.svg';
-    linkedInLogo.alt = 'LinkedIn profile';
-    linkedInLink.appendChild(linkedInLogo);
-    socialLinks.appendChild(linkedInLink);
-
-    // GitHub
-    const githubLink = document.createElement('a');
-    githubLink.href = 'https://github.com/Peluhott';
-    githubLink.target = '_blank';
-    const githubLogo = document.createElement('img');
-    githubLogo.className = 'socialLinks';
-    githubLogo.src = 'images/githublogo.svg';
-    githubLogo.alt = 'GitHub profile';
-    githubLink.appendChild(githubLogo);
-    socialLinks.appendChild(githubLink);
-
-    // Email
-    const emailLink = document.createElement('a');
-    emailLink.href = 'mailto:j_sedanomar@uncg.edu';
-    emailLink.target = '_blank';
-    const emailLogo = document.createElement('img');
-    emailLogo.className = 'socialLinks';
-    emailLogo.src = 'images/emaillogo.svg';
-    emailLogo.alt = 'Send email';
-    emailLink.appendChild(emailLogo);
-    socialLinks.appendChild(emailLink);
-
-    // Resume
-    const resumeLink = document.createElement('a');
-    resumeLink.href = 'resume/090825resume.pdf'; 
-    resumeLink.download = 'SedanoDev-Resume.pdf'; 
-    const resumeLogo = document.createElement('img');
-    resumeLogo.className = 'socialLinks';
-    resumeLogo.src = 'images/resumelogo.svg';
-    resumeLogo.alt = 'View resume';
-    resumeLink.appendChild(resumeLogo);
-    socialLinks.appendChild(resumeLink);
-
-    contentContainer.appendChild(titleText);
-    contentContainer.appendChild(aboutPhoto);
-    contentContainer.appendChild(socialLinks);
-    mainContainer.appendChild(contentContainer);
-}
-
-function renderAboutMe(mainContainer) {
-    mainContainer.innerHTML = '';
-    const aboutContentContainer = document.createElement('div');
-    aboutContentContainer.className = 'aboutme';
+    // Left: Photo
     const leftContent = document.createElement('div');
     leftContent.className = 'left-content';
     const leftPicture = document.createElement('img');
     leftPicture.className = 'left-picture';
     leftPicture.src = 'images/greetpic2.png';
     leftPicture.alt = 'profile picture';
-    const leftIntro = document.createElement('p');
-    leftIntro.textContent = "Hey, I'm Javier!";
     leftContent.appendChild(leftPicture);
-    leftContent.appendChild(leftIntro);
-    aboutContentContainer.appendChild(leftContent);
 
+    // Right: Title, subtitle, email button
     const rightContent = document.createElement('div');
     rightContent.className = 'right-content';
-    const rightHeader = document.createElement('p');
-    rightHeader.textContent = "About Me"
-    rightHeader.className = 'right-header'
-    const rightTextContent = document.createElement('p');
-    rightTextContent.className = 'rightText';
-    rightTextContent.innerHTML = `I’m a Computer Science student at the University of North Carolina–Greensboro. I love learning and I’m passionate about building projects that make a real impact. My dream is to work in a place where technology is used to create meaningful change and help people.<br><br>I’m currently looking for internship opportunities, feel free to reach out if you’d like to connect!<br><br>Outside of coding, you’ll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.`;
+    // Title
+    const rightHeader = document.createElement('h1');
+    rightHeader.className = 'right-header';
+    rightHeader.textContent = "Hi, I'm Javier - Software Engineer";
     rightContent.appendChild(rightHeader);
-    rightContent.appendChild(rightTextContent);
+    
+ 
+    
+    const aboutTextContainer = document.createElement('div');
+    aboutTextContainer.className = 'aboutme-text';
+    const aboutText = document.createElement('p');
+    aboutText.innerHTML = ` I’m a Computer Science student at the University of North Carolina–Greensboro. I love learning and I’m passionate about building projects that make a real impact. My dream is to work in a place where technology is used to create meaningful change and help people.<br><br> I’m currently looking for internship opportunities, feel free to reach out if you’d like to connect!<br><br>    Outside of coding, you’ll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.`;
+    aboutTextContainer.appendChild(aboutText);
+    rightContent.appendChild(aboutTextContainer);
 
-    aboutContentContainer.appendChild(rightContent);
-    mainContainer.appendChild(aboutContentContainer);
+    // Email action button
+    const emailButton = document.createElement('a');
+    emailButton.href = 'mailto:j_sedanomar@uncg.edu';
+    emailButton.target = '_blank';
+    emailButton.className = 'email-action-btn';
+
+    // Add email icon to button (bigger, no text)
+    const emailIcon = document.createElement('img');
+    emailIcon.src = 'images/emailLogo.png';
+    emailIcon.alt = 'Email';
+    emailIcon.style.width = '2em';
+    emailIcon.style.height = '2em';
+    emailIcon.style.verticalAlign = 'middle';
+
+    emailButton.appendChild(emailIcon);
+    rightContent.appendChild(emailButton);
+    
+    contentContainer.appendChild(leftContent);
+    contentContainer.appendChild(rightContent);
+
+    // About Me text below
+    
+    
+    mainContainer.appendChild(contentContainer)
+    
+    
 }
+
+
 
 function renderProject(mainContainer) {
-    mainContainer.innerHTML = '';
+  mainContainer.innerHTML = '';
 
-        // Carousel state
-        let currentIndex = 0;
+  // --- Projects Section ---
+  const projectsHeader = document.createElement('h1');
+  projectsHeader.textContent = 'Projects';
+  mainContainer.appendChild(projectsHeader);
 
-    // Carousel container
-    const carouselContainer = document.createElement('div');
-    carouselContainer.className = 'carousel-container';
+  projects.forEach(project => {
+    const projectRow = document.createElement('div');
+    projectRow.className = 'project-row';
 
-    // Left arrow (outside card)
-    const leftArrow = document.createElement('button');
-    leftArrow.className = 'carousel-arrow left-arrow';
-    leftArrow.innerHTML = '&#8592;';
-    leftArrow.setAttribute('aria-label', 'Previous project');
+    // Left: Placeholder image
+    const imgDiv = document.createElement('div');
+    imgDiv.className = 'project-img';
+    const img = document.createElement('img');
+    img.src = project.projectIcon || 'https://via.placeholder.com/120x120?text=Project';
+    img.alt = project.title + ' image';
+    img.style.width = '120px';
+    img.style.height = '120px';
+    imgDiv.appendChild(img);
 
-    // Right arrow (outside card)
-    const rightArrow = document.createElement('button');
-    rightArrow.className = 'carousel-arrow right-arrow';
-    rightArrow.innerHTML = '&#8594;';
-    rightArrow.setAttribute('aria-label', 'Next project');
-
-    // Project card container
-    const projectCard = document.createElement('div');
-    projectCard.className = 'project-card';
-
-    // Render project card
-    function renderProjectCard(index) {
-        const project = projects[index];
-        projectCard.innerHTML = '';
-
-        // --- Image Section (left) ---
-        const imageSection = document.createElement('div');
-        imageSection.className = 'project-image-section';
-        const iconImg = document.createElement('img');
-        iconImg.src = project.projectIcon;
-        iconImg.alt = project.title + ' icon';
-        iconImg.className = 'project-icon';
-        imageSection.appendChild(iconImg);
-
-        // --- Info Section (right) ---
-        const infoSection = document.createElement('div');
-        infoSection.className = 'project-info-section';
-        // Title
-        const title = document.createElement('h2');
-        title.className = 'project-title';
-        title.textContent = project.title;
-        infoSection.appendChild(title);
-        // If Memoire, add a visible label
-        if (project.title.includes('Memoire')) {
-            const wipLabel = document.createElement('span');
-            wipLabel.className = 'wip-label';
-            wipLabel.textContent = 'Work in Progress';
-            infoSection.appendChild(wipLabel);
-        }
-        // Description
-        const desc = document.createElement('p');
-        desc.className = 'project-description';
-        desc.textContent = project.description;
-        infoSection.appendChild(desc);
-        // Only show GitHub link if there is a link
-        if (project.githubLink) {
-            const githubLink = document.createElement('a');
-            githubLink.href = project.githubLink;
-            githubLink.target = '_blank';
-            githubLink.className = 'project-github-link';
-            const githubImg = document.createElement('img');
-            githubImg.src = project.githubIcon;
-            githubImg.alt = 'GitHub repository';
-            githubImg.className = 'github-icon small-github-icon';
-            githubLink.appendChild(githubImg);
-            infoSection.appendChild(githubLink);
-        }
-
-        // Add both sections to card (image left, info right)
-        projectCard.appendChild(imageSection);
-        projectCard.appendChild(infoSection);
+    // Right: Title, description, GitHub
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'project-info';
+    const title = document.createElement('h2');
+    title.textContent = project.title;
+    infoDiv.appendChild(title);
+    
+    const desc = document.createElement('p');
+    desc.textContent = project.description;
+    infoDiv.appendChild(desc);
+    
+    if (project.githubLink) {
+      const githubLink = document.createElement('a');
+      githubLink.href = project.githubLink;
+      githubLink.target = '_blank';
+      githubLink.className = 'project-github-link';
+      const githubImg = document.createElement('img');
+      githubImg.src = project.githubIcon;
+      githubImg.alt = 'GitHub repository';
+      githubImg.className = 'github-icon small-github-icon';
+      githubLink.appendChild(githubImg);
+      infoDiv.appendChild(githubLink);
     }
+    
+    projectRow.appendChild(imgDiv);
+    projectRow.appendChild(infoDiv);
+    mainContainer.appendChild(projectRow);
+  });
 
-    // Arrow event listeners
-    leftArrow.addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-        renderProjectCard(currentIndex);
-    });
-    rightArrow.addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % projects.length;
-        renderProjectCard(currentIndex);
-    });
+  
+  const coursesHeader = document.createElement('h1');
+  coursesHeader.textContent = 'Relevant Courses Taken';
+  coursesHeader.style.marginTop = '2.5rem';
+  mainContainer.appendChild(coursesHeader);
 
-    // Initial render
-    renderProjectCard(currentIndex);
+  // Add this before your courses.forEach
+  const coursesGrid = document.createElement('div');
+  coursesGrid.className = 'courses-grid';
 
-    // Layout: arrows outside card
-    carouselContainer.appendChild(leftArrow);
-    carouselContainer.appendChild(projectCard);
-    carouselContainer.appendChild(rightArrow);
-    mainContainer.appendChild(carouselContainer);
+  courses.forEach(course => {
+    const courseRow = document.createElement('div');
+    courseRow.className = 'course-row';
+
+    // Left: Placeholder image
+    const imgDiv = document.createElement('div');
+    imgDiv.className = 'course-img';
+    const img = document.createElement('img');
+    img.src = course.image || 'https://via.placeholder.com/100x100?text=Course';
+    img.alt = course.title + ' image';
+    img.style.width = '100px';
+    img.style.height = '100px';
+    imgDiv.appendChild(img);
+
+    // Right: Title, description, internship benefits
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'course-info';
+    const title = document.createElement('h2');
+    title.textContent = course.title;
+    infoDiv.appendChild(title);
+    const desc = document.createElement('p');
+    desc.textContent = course.shortDescription;
+    infoDiv.appendChild(desc);
+    const benefits = document.createElement('p');
+    benefits.textContent = course.internshipBenefits;
+    benefits.style.fontStyle = 'italic';
+    infoDiv.appendChild(benefits);
+
+    courseRow.appendChild(imgDiv);
+    courseRow.appendChild(infoDiv);
+    coursesGrid.appendChild(courseRow); // <-- append to grid, not mainContainer
+  });
+
+  mainContainer.appendChild(coursesGrid); // <-- append grid to mainContainer
 }
+
 
 function renderSkills(mainContainer) {
     mainContainer.innerHTML = '';
@@ -386,12 +410,12 @@ function renderSkills(mainContainer) {
 document.addEventListener('DOMContentLoaded', function() {
     const mainContainer = document.querySelector('.main-content');
     const homeLink = document.getElementById('home-link');
-    const aboutLink = document.getElementById('about-link');
+    
     const projectsLink = document.getElementById('projects-link');
     const skillsLink = document.getElementById('skills-link');
 
     if (homeLink) homeLink.addEventListener('click', function(e) { e.preventDefault(); renderHomePage(mainContainer); });
-    if (aboutLink) aboutLink.addEventListener('click', function(e) { e.preventDefault(); renderAboutMe(mainContainer); });
+    
     if (projectsLink) projectsLink.addEventListener('click', function(e) { e.preventDefault(); renderProject(mainContainer); });
     if (skillsLink) skillsLink.addEventListener('click', function(e) { e.preventDefault(); renderSkills(mainContainer); });
 
