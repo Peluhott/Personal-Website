@@ -1,94 +1,115 @@
 // Project data for carousel
 const projects = [
     {
-        title: 'Shop Platform  E-Commerce Backend',
-        description: 'A full-stack e-commerce project featuring a RESTful API with Node.js, TypeScript, PostgreSQL, and Prisma. Supports secure JWT authentication, product/catalog management, carts, orders, and admin dashboards, with Cloudinary for media storage and Jest testing. React frontend planned.',
-        projectIcon: 'images/shopbackend.png', 
+        title: 'Memoire',
+        description: 'A full-stack memory resurfacing platform that lets users upload photo-based memories and receive them later through scheduled email delivery. Built with React, TypeScript, Node.js, Resend for email delivery, OpenAI for generated content, and Cloudinary for secure media storage, then deployed to Azure with CI/CD pipelines using GitHub Actions.',
+        projectIcon: 'previews/memoirepreview.png',
         githubIcon: 'images/githublogo.svg',
-        githubLink: 'https://github.com/Peluhott/shop-backend' 
+        githubLink: 'https://github.com/Peluhott/memoire',
+        liveLink: 'https://memoireclient.mangosky-85e31bca.eastus2.azurecontainerapps.io'
     },
     {
-        title: 'Memoire  Mood Support App (Work in Progress)',
-        description: 'Memoire helps users overcome low moods by detecting sadness through wearable data (HRV, sleep quality) or self-reports and delivering uplifting, personalized content. Built with Node.js, TypeScript, PostgreSQL, Swift/React Native, and Cloudinary, it integrates with Apple Watch and Oura Ring, supports secure social logins, and allows users to upload, like, save, and share encouraging memories. To ensure effectiveness, the app itself decides when to deliver positive reminders.',
-        projectIcon: 'images/memoire.png', 
+        title: 'GroupLink',
+        description: 'A collaborative full-stack group management platform built with Java, HTML, CSS, and a SQL database. The backend handles user interactions and group functionality, while the frontend presents that functionality through a clean interface and supporting documentation.',
+        projectIcon: 'previews/grouplinkpreview.png',
         githubIcon: 'images/githublogo.svg',
-        githubLink: ''
+        githubLink: 'https://github.com/Peluhott/group-functionality'
+    },
+    {
+        title: 'Shop Platform',
+        description: 'A deployed full-stack e-commerce admin backend that supports product, order, and user management. Implemented role-based authentication and secure REST APIs for CRUD operations, using TypeScript, Node.js, PostgreSQL, Prisma ORM, Render/Vercel, and Cloudinary.',
+        projectIcon: 'images/shopbackend.png',
+        githubIcon: 'images/githublogo.svg',
+        githubLink: 'https://github.com/Peluhott/shop-backend'
     }
 ];
 
 const courses = [
   {
     title: "Software Engineering",
-    shortDescription: "Principles of design, testing, version control, and project management.",
-    internshipBenefits: "Prepares for teamwork, agile development, and producing scalable software.",
+    shortDescription: "Covers software design, testing, collaboration, and maintainable application development.",
+    internshipBenefits: "Strengthens the teamwork and engineering habits used in production software environments.",
     image: "images/SoftwareEngineering.png"
   },
   {
-    title: "Java Programming",
-    shortDescription: "Covers object-oriented programming, data structures, and application design in Java.",
-    internshipBenefits: "Write clean, maintainable code, debug effectively, and work with common frameworks.",
-    image: "images/java.svg"
+    title: "Big Data & Machine Learning",
+    shortDescription: "Introduces data-heavy workflows, model building, and practical machine learning concepts.",
+    internshipBenefits: "Builds intuition for working with large datasets and applying data-driven problem solving.",
+    image: "images/numpy.svg"
   },
   {
-    title: "Calculus I & II",
-    shortDescription: "Focus on limits, derivatives, integrals, series, and multivariable basics.",
-    internshipBenefits: "Sharpens problem-solving and analytical thinking for algorithms and modeling.",
-    image: "images/Calc.png"
-  },
-  {
-    title: "Statistics",
-    shortDescription: "Covers probability, distributions, hypothesis testing, and regression.",
-    internshipBenefits: "Helps interpret data, validate results, and support data-driven decisions.",
-    image: "images/statistics.png"
-  },
-  {
-    title: "Discrete Mathematics",
-    shortDescription: "Topics include logic, sets, relations, graphs, and combinatorics.",
-    internshipBenefits: "Develops reasoning for algorithms, complexity analysis, and data structures.",
-    image: "images/discrete.png"
-  },
-  {
-    title: "Data Structures",
-    shortDescription: "Study of arrays, linked lists, stacks, queues, trees, and graphs.",
-    internshipBenefits: "Improves ability to optimize performance and solve coding interview problems.",
-    image: "images/DataStructures.png"
-  },
-  {
-    title: "Computer Organization & Assembly",
-    shortDescription: "Covers hardware architecture, memory, and low-level programming.",
-    internshipBenefits: "Gives insight into performance optimization and how code runs on hardware.",
-    image: "images/ComputerOrg.png"
-  },
-  {
-    title: "Principles of Databases",
-    shortDescription: "Design and query relational databases using SQL and normalization.",
-    internshipBenefits: "Enables building and maintaining databases, crucial for backend systems.",
+    title: "Database Systems",
+    shortDescription: "Focuses on relational design, normalization, querying, and database-backed application patterns.",
+    internshipBenefits: "Supports backend development through stronger data modeling and SQL fundamentals.",
     image: "images/Database.png"
   },
   {
-    title: "Systems Programming",
-    shortDescription: "Covers C programming, memory management, and OS-level concepts.",
-    internshipBenefits: "Helps with debugging, performance tuning, and understanding operating systems.",
-    image: "images/systems.png"
+    title: "Artificial Intelligence",
+    shortDescription: "Explores core AI ideas, decision making, and intelligent system behavior.",
+    internshipBenefits: "Helps connect algorithmic thinking to modern AI-assisted and intelligent software systems.",
+    image: "images/openai.svg"
   },
   {
-    title: "Concepts of Programming Languages",
-    shortDescription: "Explores syntax, semantics, paradigms, and type systems.",
-    internshipBenefits: "Improves adaptability to new languages and writing efficient code.",
-    image: "images/programminglanguages.png"
+    title: "Data Structures & Algorithms",
+    shortDescription: "Covers efficient data organization, algorithm design, and runtime tradeoffs.",
+    internshipBenefits: "Improves performance reasoning, backend problem solving, and technical interview readiness.",
+    image: "images/DataStructures.png"
   },
   {
-    title: "Ethics in Computer Science",
-    shortDescription: "Examines social, legal, and ethical issues in technology.",
-    internshipBenefits: "Develops professionalism, responsibility, and awareness of ethical practices.",
-    image: "images/Ethics.png"
+    title: "Data Science",
+    shortDescription: "Combines statistical thinking, analysis, and interpretation for real-world datasets.",
+    internshipBenefits: "Strengthens quantitative reasoning and evidence-based decision making in software projects.",
+    image: "images/statistics.png"
+  }
+];
+
+const skillGroups = [
+  {
+    title: 'Programming Languages',
+    items: [
+      { label: 'TypeScript', icon: 'images/typescript.png' },
+      { label: 'Python', icon: 'images/python.svg' },
+      { label: 'Java', icon: 'images/java.svg' },
+      { label: 'HTML', icon: 'images/html.svg' },
+      { label: 'CSS', icon: 'images/css.svg' },
+      { label: 'SQL', icon: 'images/sql.png' },
+      { label: 'JavaScript', icon: 'images/javascript.svg' }
+    ]
+  },
+  {
+    title: 'Frameworks & Libraries',
+    items: [
+      { label: 'React', icon: 'images/react.svg' },
+      { label: 'Node.js', icon: 'images/nodejs.png' },
+      { label: 'Express', icon: 'images/express.svg' },
+      { label: 'Spring Boot', icon: 'images/springboot.svg' },
+      { label: 'Pandas', icon: 'images/pandas.svg' },
+      { label: 'NumPy', icon: 'images/numpy.svg' },
+      { label: 'Prisma', icon: 'images/prisma.svg' }
+    ]
+  },
+  {
+    title: 'Development Tools',
+    items: [
+      { label: 'Claude', icon: 'images/anthropic.svg' },
+      { label: 'Codex', icon: 'images/openai.svg' },
+      { label: 'Copilot', icon: 'images/githubcopilot.svg' },
+      { label: 'Git / GitHub', icon: 'images/githublogo.svg' }
+    ]
+  },
+  {
+    title: 'DevOps',
+    items: [
+      { label: 'Docker / DockerHub', icon: 'images/docker.svg' },
+      { label: 'GitHub Actions', icon: 'images/githubactions.svg' },
+      { label: 'Azure', icon: 'images/azure.svg' }
+    ]
   }
 ];
 
 
 
-function renderHomePage(mainContainer) {
-    mainContainer.innerHTML = '';
+function renderHomePage() {
     // Main container for combined Home/About
     const contentContainer = document.createElement('div');
     contentContainer.className = 'aboutme';
@@ -116,47 +137,124 @@ function renderHomePage(mainContainer) {
     const aboutTextContainer = document.createElement('div');
     aboutTextContainer.className = 'aboutme-text';
     const aboutText = document.createElement('p');
-    aboutText.innerHTML = ` I’m a Computer Science student at the University of North Carolina–Greensboro. I love learning and I’m passionate about building projects that make a real impact. My dream is to work in a place where technology is used to create meaningful change and help people.<br><br> I’m currently looking for internship opportunities, feel free to reach out if you’d like to connect!<br><br>    Outside of coding, you’ll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.`;
+    aboutText.innerHTML = ` I’m a Computer Science student at the University of North Carolina–Greensboro. I love learning and I’m passionate about building projects that make a real impact. My dream is to work in a place where technology is used to create meaningful change and help people.`;
     aboutTextContainer.appendChild(aboutText);
     rightContent.appendChild(aboutTextContainer);
 
-    // Email action button
-    const emailButton = document.createElement('a');
-    emailButton.href = 'mailto:j_sedanomar@uncg.edu';
-    emailButton.target = '_blank';
-    emailButton.className = 'email-action-btn';
-
-    // Add email icon to button (bigger, no text)
-    const emailIcon = document.createElement('img');
-    emailIcon.src = 'images/emailLogo.png';
-    emailIcon.alt = 'Email';
-    emailIcon.style.width = '2em';
-    emailIcon.style.height = '2em';
-    emailIcon.style.verticalAlign = 'middle';
-
-    emailButton.appendChild(emailIcon);
-    rightContent.appendChild(emailButton);
-    
     contentContainer.appendChild(leftContent);
     contentContainer.appendChild(rightContent);
 
-    // About Me text below
-    
-    
-    mainContainer.appendChild(contentContainer)
-    
-    
+    const homeSection = document.createElement('section');
+    homeSection.id = 'home-section';
+    homeSection.appendChild(contentContainer);
+
+    return homeSection;
+}
+
+function renderJobSection() {
+    const jobSection = document.createElement('section');
+    jobSection.className = 'job-section';
+
+    const jobTextContainer = document.createElement('div');
+    jobTextContainer.className = 'job-section-text';
+    const jobHeader = document.createElement('h2');
+    jobHeader.textContent = 'Open to Fall 2026 Roles';
+    const jobText = document.createElement('p');
+    jobText.innerHTML = "I'm currently looking for a job starting in Fall 2026, with a strong interest in backend-focused roles. I'm comfortable using AI tools to help me code, I enjoy problem solving, and I'm naturally curious about how systems work under the hood. I'm especially interested in system design and building reliable software, and I'm familiar with working across multiple technologies in full-stack environments.<br><br>Outside of coding, you'll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.";
+    jobTextContainer.appendChild(jobHeader);
+    jobTextContainer.appendChild(jobText);
+
+    const jobImage = document.createElement('div');
+    jobImage.className = 'job-section-image';
+    const placeholderImage = document.createElement('img');
+    placeholderImage.src = 'images/2ndpicture.jpg';
+    placeholderImage.alt = 'Javier portrait';
+    jobImage.appendChild(placeholderImage);
+
+    jobSection.appendChild(jobTextContainer);
+    jobSection.appendChild(jobImage);
+
+    return jobSection;
+}
+
+function renderContactSection() {
+    const section = document.createElement('section');
+    section.id = 'contact-section';
+    section.className = 'contact-section';
+
+    const heading = document.createElement('h1');
+    heading.textContent = 'Contact Me';
+
+    const text = document.createElement('p');
+    text.className = 'contact-copy';
+    text.innerHTML = "If you'd like to talk about a backend role, a project, or anything I'm building, reach out and I'll get back to you.";
+
+    const emailLink = document.createElement('a');
+    emailLink.href = 'mailto:j_sedanomar@uncg.edu';
+    emailLink.className = 'contact-email-link';
+    emailLink.textContent = 'j_sedanomar@uncg.edu';
+
+    const contactLinks = document.createElement('div');
+    contactLinks.className = 'contact-links';
+
+    const links = [
+        {
+            href: 'mailto:j_sedanomar@uncg.edu',
+            icon: 'images/emailLogo.png',
+            alt: 'Email',
+            label: 'Email'
+        },
+        {
+            href: 'https://www.linkedin.com/in/javier-sedano/',
+            icon: 'images/linkedinlogo.svg',
+            alt: 'LinkedIn profile',
+            label: 'LinkedIn'
+        },
+        {
+            href: 'https://github.com/Peluhott',
+            icon: 'images/githublogo.svg',
+            alt: 'GitHub profile',
+            label: 'GitHub'
+        }
+    ];
+
+    links.forEach(linkData => {
+        const link = document.createElement('a');
+        link.href = linkData.href;
+        link.target = '_blank';
+        link.rel = 'noreferrer';
+        link.className = 'contact-link-card';
+
+        const icon = document.createElement('img');
+        icon.src = linkData.icon;
+        icon.alt = linkData.alt;
+
+        const label = document.createElement('span');
+        label.textContent = linkData.label;
+
+        link.appendChild(icon);
+        link.appendChild(label);
+        contactLinks.appendChild(link);
+    });
+
+    section.appendChild(heading);
+    section.appendChild(text);
+    section.appendChild(emailLink);
+    section.appendChild(contactLinks);
+
+    return section;
 }
 
 
 
-function renderProject(mainContainer) {
-  mainContainer.innerHTML = '';
+function renderProject() {
+  const section = document.createElement('section');
+  section.id = 'projects-section';
 
   // --- Projects Section ---
   const projectsHeader = document.createElement('h1');
   projectsHeader.textContent = 'Projects';
-  mainContainer.appendChild(projectsHeader);
+  section.appendChild(projectsHeader);
 
   projects.forEach(project => {
     const projectRow = document.createElement('div');
@@ -168,8 +266,6 @@ function renderProject(mainContainer) {
     const img = document.createElement('img');
     img.src = project.projectIcon || 'https://via.placeholder.com/120x120?text=Project';
     img.alt = project.title + ' image';
-    img.style.width = '120px';
-    img.style.height = '120px';
     imgDiv.appendChild(img);
 
     // Right: Title, description, GitHub
@@ -195,19 +291,32 @@ function renderProject(mainContainer) {
       githubLink.appendChild(githubImg);
       infoDiv.appendChild(githubLink);
     }
+
+    if (project.liveLink) {
+      const liveLink = document.createElement('a');
+      liveLink.href = project.liveLink;
+      liveLink.target = '_blank';
+      liveLink.className = 'project-live-link';
+      liveLink.textContent = 'Live Site';
+      infoDiv.appendChild(liveLink);
+    }
     
     projectRow.appendChild(imgDiv);
     projectRow.appendChild(infoDiv);
-    mainContainer.appendChild(projectRow);
+    section.appendChild(projectRow);
   });
 
-  
+  return section;
+}
+
+function renderCoursesSection() {
+  const section = document.createElement('section');
+  section.id = 'courses-section';
+
   const coursesHeader = document.createElement('h1');
   coursesHeader.textContent = 'Relevant Courses Taken';
-  coursesHeader.style.marginTop = '2.5rem';
-  mainContainer.appendChild(coursesHeader);
+  section.appendChild(coursesHeader);
 
-  // Add this before your courses.forEach
   const coursesGrid = document.createElement('div');
   coursesGrid.className = 'courses-grid';
 
@@ -244,181 +353,67 @@ function renderProject(mainContainer) {
     coursesGrid.appendChild(courseRow); // <-- append to grid, not mainContainer
   });
 
-  mainContainer.appendChild(coursesGrid); // <-- append grid to mainContainer
+  section.appendChild(coursesGrid);
+
+  return section;
 }
 
 
-function renderSkills(mainContainer) {
-    mainContainer.innerHTML = '';
+function renderSkills() {
+    const section = document.createElement('section');
+    section.id = 'skills-section';
 
-    // Create a content container for all skill rows
     const skillsContentContainer = document.createElement('div');
     skillsContentContainer.className = 'skills-content-container';
 
-    const firstRow = document.createElement('div');
-    firstRow.className = 'skillsrow';
-    const secondRow = document.createElement('div');
-    secondRow.className = 'skillsrow';
-    const thirdRow = document.createElement('div');
-    thirdRow.className = 'skillsrow';
+    skillGroups.forEach(group => {
+        const row = document.createElement('div');
+        row.className = 'skillsrow';
 
-    const firstText = document.createElement('p');
-    firstText.textContent = 'Programming & Frameworks';
-    firstRow.appendChild(firstText);
-    const firstLogos = document.createElement('div');
-    firstLogos.className = 'skills-logos-row';
+        const heading = document.createElement('p');
+        heading.textContent = group.title;
+        row.appendChild(heading);
 
-    // Skill icons for Programming & Frameworks
-    const javaIcon = document.createElement('img');
-    javaIcon.src = 'images/java.svg';
-    javaIcon.alt = 'Java';
-    javaIcon.className = 'skillicons';
-    firstLogos.appendChild(javaIcon);
+        const logosRow = document.createElement('div');
+        logosRow.className = 'skills-logos-row';
 
-    const jsIcon = document.createElement('img');
-    jsIcon.src = 'images/javascript.svg';
-    jsIcon.alt = 'JavaScript';
-    jsIcon.className = 'skillicons';
-    firstLogos.appendChild(jsIcon);
+        group.items.forEach(item => {
+            const skillItem = document.createElement('div');
+            skillItem.className = 'skill-item';
 
-    const tsIcon = document.createElement('img');
-    tsIcon.src = 'images/typescript.png';
-    tsIcon.alt = 'TypeScript';
-    tsIcon.className = 'skillicons';
-    firstLogos.appendChild(tsIcon);
+            const icon = document.createElement('img');
+            icon.src = item.icon;
+            icon.alt = item.label;
+            icon.className = 'skillicons';
 
-    const htmlIcon = document.createElement('img');
-    htmlIcon.src = 'images/html.svg';
-    htmlIcon.alt = 'HTML';
-    htmlIcon.className = 'skillicons';
-    firstLogos.appendChild(htmlIcon);
+            const label = document.createElement('span');
+            label.textContent = item.label;
 
-    const cssIcon = document.createElement('img');
-    cssIcon.src = 'images/css.svg';
-    cssIcon.alt = 'CSS';
-    cssIcon.className = 'skillicons';
-    firstLogos.appendChild(cssIcon);
+            skillItem.appendChild(icon);
+            skillItem.appendChild(label);
+            logosRow.appendChild(skillItem);
+        });
 
-    const reactIcon = document.createElement('img');
-    reactIcon.src = 'images/react.svg';
-    reactIcon.alt = 'React';
-    reactIcon.className = 'skillicons';
-    firstLogos.appendChild(reactIcon);
+        row.appendChild(logosRow);
+        skillsContentContainer.appendChild(row);
+    });
 
-    const nodeIcon = document.createElement('img');
-    nodeIcon.src = 'images/nodejs.png';
-    nodeIcon.alt = 'Node.js';
-    nodeIcon.className = 'skillicons';
-    firstLogos.appendChild(nodeIcon);
+    section.appendChild(skillsContentContainer);
 
-    firstRow.appendChild(firstLogos);
-
-    const secondText = document.createElement('p');
-    secondText.textContent = 'Tools & Databases';
-    secondRow.appendChild(secondText);
-    const secondLogos = document.createElement('div');
-    secondLogos.className = 'skills-logos-row';
-
-    // Skill icons for Tools & Databases
-    const sqlIcon = document.createElement('img');
-    sqlIcon.src = 'images/sql.png';
-    sqlIcon.alt = 'SQL';
-    sqlIcon.className = 'skillicons';
-    secondLogos.appendChild(sqlIcon);
-
-    const prismaIcon = document.createElement('img');
-    prismaIcon.src = 'images/prisma.svg';
-    prismaIcon.alt = 'Prisma';
-    prismaIcon.className = 'skillicons';
-    secondLogos.appendChild(prismaIcon);
-
-    const redisIcon = document.createElement('img');
-    redisIcon.src = 'images/redis.svg';
-    redisIcon.alt = 'Redis';
-    redisIcon.className = 'skillicons';
-    secondLogos.appendChild(redisIcon);
-
-    const supabaseIcon = document.createElement('img');
-    supabaseIcon.src = 'images/supabase.svg';
-    supabaseIcon.alt = 'Supabase';
-    supabaseIcon.className = 'skillicons';
-    secondLogos.appendChild(supabaseIcon);
-
-    const cloudinaryIcon = document.createElement('img');
-    cloudinaryIcon.src = 'images/cloudinary.svg';
-    cloudinaryIcon.alt = 'Cloudinary';
-    cloudinaryIcon.className = 'skillicons';
-    secondLogos.appendChild(cloudinaryIcon);
-
-    const gitIcon = document.createElement('img');
-    gitIcon.src = 'images/githublogo.svg';
-    gitIcon.alt = 'Git';
-    gitIcon.className = 'skillicons';
-    secondLogos.appendChild(gitIcon);
-
-    const postmanIcon = document.createElement('img');
-    postmanIcon.src = 'images/postman.svg';
-    postmanIcon.alt = 'Postman';
-    postmanIcon.className = 'skillicons';
-    secondLogos.appendChild(postmanIcon);
-
-    const jestIcon = document.createElement('img');
-    jestIcon.src = 'images/jest.png';
-    jestIcon.alt = 'Jest';
-    jestIcon.className = 'skillicons';
-    secondLogos.appendChild(jestIcon);
-
-    const vscodeIcon = document.createElement('img');
-    vscodeIcon.src = 'images/visualcode.svg';
-    vscodeIcon.alt = 'VS Code';
-    vscodeIcon.className = 'skillicons';
-    secondLogos.appendChild(vscodeIcon);
-
-    secondRow.appendChild(secondLogos);
-
-    const thirdText = document.createElement('p');
-    thirdText.textContent = 'Design & AI';
-    thirdRow.appendChild(thirdText);
-    const thirdLogos = document.createElement('div');
-    thirdLogos.className = 'skills-logos-row';
-
-    // Skill icons for Design & AI
-    const figmaIcon = document.createElement('img');
-    figmaIcon.src = 'images/figma.svg';
-    figmaIcon.alt = 'Figma';
-    figmaIcon.className = 'skillicons';
-    thirdLogos.appendChild(figmaIcon);
-
-    const openaiIcon = document.createElement('img');
-    openaiIcon.src = 'images/openai.svg';
-    openaiIcon.alt = 'OpenAI';
-    openaiIcon.className = 'skillicons';
-    thirdLogos.appendChild(openaiIcon);
-
-    thirdRow.appendChild(thirdLogos);
-
-    // Append all rows to the content container
-    skillsContentContainer.appendChild(firstRow);
-    skillsContentContainer.appendChild(secondRow);
-    skillsContentContainer.appendChild(thirdRow);
-
-    // Add the content container to the main container
-    mainContainer.appendChild(skillsContentContainer);
+    return section;
 }
 
-// Wire up nav links to render functions after DOM is loaded
+function renderSinglePage(mainContainer) {
+    mainContainer.innerHTML = '';
+    mainContainer.appendChild(renderHomePage());
+    mainContainer.appendChild(renderProject());
+    mainContainer.appendChild(renderJobSection());
+    mainContainer.appendChild(renderCoursesSection());
+    mainContainer.appendChild(renderSkills());
+    mainContainer.appendChild(renderContactSection());
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const mainContainer = document.querySelector('.main-content');
-    const homeLink = document.getElementById('home-link');
-    
-    const projectsLink = document.getElementById('projects-link');
-    const skillsLink = document.getElementById('skills-link');
-
-    if (homeLink) homeLink.addEventListener('click', function(e) { e.preventDefault(); renderHomePage(mainContainer); });
-    
-    if (projectsLink) projectsLink.addEventListener('click', function(e) { e.preventDefault(); renderProject(mainContainer); });
-    if (skillsLink) skillsLink.addEventListener('click', function(e) { e.preventDefault(); renderSkills(mainContainer); });
-
-    // Render home page by default
-    renderHomePage(mainContainer);
+    renderSinglePage(mainContainer);
 });
