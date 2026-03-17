@@ -17,8 +17,8 @@ const projects = [
     },
     {
         title: 'Shop Platform',
-        description: 'A deployed full-stack e-commerce admin backend that supports product, order, and user management. Implemented role-based authentication and secure REST APIs for CRUD operations, using TypeScript, Node.js, PostgreSQL, Prisma ORM, Render/Vercel, and Cloudinary.',
-        projectIcon: 'images/shopbackend.png',
+        description: 'A full-stack e-commerce platform with a backend RESTful API for product, order, and user management. Built role-based authentication and secure CRUD endpoints, then improved performance with Redis caching and pagination for scalable data access. Developed with TypeScript, Node.js, PostgreSQL, Prisma ORM, Cloudinary, and deployed across Render/Vercel.',
+        projectIcon: 'previews/shoppreview.png',
         githubIcon: 'images/githublogo.svg',
         githubLink: 'https://github.com/Peluhott/shop-backend'
     }
@@ -85,7 +85,8 @@ const skillGroups = [
       { label: 'Spring Boot', icon: 'images/springboot.svg' },
       { label: 'Pandas', icon: 'images/pandas.svg' },
       { label: 'NumPy', icon: 'images/numpy.svg' },
-      { label: 'Prisma', icon: 'images/prisma.svg' }
+      { label: 'Prisma', icon: 'images/prisma.svg' },
+      { label: 'Redis', icon: 'images/redis.svg' }
     ]
   },
   {
@@ -160,7 +161,7 @@ function renderJobSection() {
     const jobHeader = document.createElement('h2');
     jobHeader.textContent = 'Open to Fall 2026 Roles';
     const jobText = document.createElement('p');
-    jobText.innerHTML = "I'm currently looking for a job starting in Fall 2026, with a strong interest in backend-focused roles. I'm comfortable using AI tools to help me code, I enjoy problem solving, and I'm naturally curious about how systems work under the hood. I'm especially interested in system design and building reliable software, and I'm familiar with working across multiple technologies in full-stack environments.<br><br>Outside of coding, you'll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.";
+    jobText.innerHTML = "I'm currently looking for a job starting in Fall 2026, with a strong interest in backend-focused roles. I can leverage AI tools to be more productive, I enjoy problem solving, and I'm naturally curious about how systems work under the hood. I'm especially interested in system design and building reliable software, and I'm familiar with working across multiple technologies in full-stack environments.<br><br>Outside of coding, you'll usually find me cooking, diving into a good book, or exploring YouTube rabbit holes.";
     jobTextContainer.appendChild(jobHeader);
     jobTextContainer.appendChild(jobText);
 
