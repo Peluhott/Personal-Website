@@ -20,7 +20,8 @@ const projects = [
         description: 'A full-stack e-commerce platform with a backend RESTful API for product, order, and user management. Built role-based authentication and secure CRUD endpoints, then improved performance with Redis caching and pagination for scalable data access. Developed with TypeScript, Node.js, PostgreSQL, Prisma ORM, Cloudinary, and deployed across Render/Vercel.',
         projectIcon: 'previews/shoppreview.png',
         githubIcon: 'images/githublogo.svg',
-        githubLink: 'https://github.com/Peluhott/shop-backend'
+        githubLink: 'https://github.com/Peluhott/shop-backend',
+        liveLink: 'https://shop-client.mangosky-85e31bca.eastus2.azurecontainerapps.io'
     }
 ];
 
@@ -280,26 +281,35 @@ function renderProject() {
     desc.textContent = project.description;
     infoDiv.appendChild(desc);
     
+    const actionsDiv = document.createElement('div');
+    actionsDiv.className = 'project-actions';
+
     if (project.githubLink) {
       const githubLink = document.createElement('a');
       githubLink.href = project.githubLink;
       githubLink.target = '_blank';
+      githubLink.rel = 'noreferrer';
       githubLink.className = 'project-github-link';
       const githubImg = document.createElement('img');
       githubImg.src = project.githubIcon;
       githubImg.alt = 'GitHub repository';
       githubImg.className = 'github-icon small-github-icon';
       githubLink.appendChild(githubImg);
-      infoDiv.appendChild(githubLink);
+      actionsDiv.appendChild(githubLink);
     }
 
     if (project.liveLink) {
       const liveLink = document.createElement('a');
       liveLink.href = project.liveLink;
       liveLink.target = '_blank';
+      liveLink.rel = 'noreferrer';
       liveLink.className = 'project-live-link';
-      liveLink.textContent = 'Live Site';
-      infoDiv.appendChild(liveLink);
+      liveLink.textContent = 'Live Preview';
+      actionsDiv.appendChild(liveLink);
+    }
+
+    if (actionsDiv.childElementCount > 0) {
+      infoDiv.appendChild(actionsDiv);
     }
     
     projectRow.appendChild(imgDiv);

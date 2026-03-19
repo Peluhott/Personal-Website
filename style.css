@@ -135,11 +135,11 @@ nav a:hover {
     display: flex;
     align-items: center;
     overflow: visible;
-    background: #EEEEEE;
+    background: #ffffff;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
+    box-shadow: 0 12px 30px rgba(34, 40, 49, 0.08);
+    padding: 1.5rem 2rem;
+    margin-bottom: 2.5rem;
     gap: 1.5rem;
 }
 
@@ -176,9 +176,40 @@ nav a:hover {
     min-width: 0;
 }
 
+.project-info p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
 .project-github-link img {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
+}
+
+.project-github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: #f3f6f8;
+    box-shadow: 0 6px 16px rgba(34, 40, 49, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.project-github-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(34, 40, 49, 0.14);
+    background: #e8f5f6;
 }
 .courses-grid {
     display: flex;
@@ -365,15 +396,26 @@ nav a:hover {
 }
 
 .project-live-link {
-    display: inline-block;
-    margin-top: 0.75rem;
-    color: #00ADB5;
-    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0 0.8rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #00ADB5, #11858d);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.01em;
     text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 173, 181, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .project-live-link:hover {
-    text-decoration: underline;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 173, 181, 0.34);
+    filter: brightness(1.03);
 }
 
 .nav-logo {
@@ -395,6 +437,10 @@ nav a:hover {
     .project-img {
         width: 100%;
         max-width: 320px;
+    }
+
+    .project-actions {
+        justify-content: center;
     }
 
     .project-img:hover img {
